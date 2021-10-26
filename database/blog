@@ -1,0 +1,16 @@
+CREATE DATABASE blog;
+USE blog;
+CREATE TABLE usuarios (
+	id INT NOT NULL AUTO_INCREMENT,
+	name VARCHAR(25) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	password  VARCHAR(12) NOT NULL,
+	register_date DATETIME NOT NULL,
+	active TINYINT NOT NULL,
+	PRIMARY KEY(id)
+);	
+CREATE TABLE producto (
+	idProducto INT NOT NULL,
+	nameProducto VARCHAR(25) NOT NULL,
+	PRIMARY KEY(idProducto)
+);
